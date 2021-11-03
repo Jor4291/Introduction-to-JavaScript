@@ -247,9 +247,12 @@ function grade(number) {
     return `you got a C`;
   }else if(number <70 && number >= 60){
     return `you got a D`;
-  }else `you got an F`;
+  }else if(number <60){
+    return ("you got an F");
+  }
 }
-console.log('task 7: ', grade(59));
+console.log('task 7: ',grade(50));
+
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
 //Vowel Counter - How many vowels are there?
